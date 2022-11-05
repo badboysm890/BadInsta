@@ -6,7 +6,7 @@ import urllib
 
 app = Flask(__name__)
 CORS(app)
-client = pymongo.MongoClient("mongodb+srv://instacluster:insta123@instacluster.iapeyji.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://instacluster:<password>@instacluster.iapeyji.mongodb.net/?retryWrites=true&w=majority")
 db = client.insta
 collection = db.gif
 
